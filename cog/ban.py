@@ -9,7 +9,7 @@ from discord.ext import commands
 logger = logging.getLogger("ModerationCog")
 
 # Custom Emoji Constants
-EMOJI_BAN = "<:Ban:1535687126966861856>"
+EMOJI_BAN = "<a:Ban:1535685463124349072>"
 EMOJI_CROSS = "<:Cross:1535661936434479124>"
 EMOJI_ARROW = "<a:Arrow:1535641409074372628>"
 EMOJI_TICK = "<a:Tick:1535660962684870798>"

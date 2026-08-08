@@ -165,7 +165,7 @@ class AFK(commands.Cog):
             del self.afk_users[message.author.id]
 
             embed = discord.Embed(
-                description=f"{message.author.mention} you're set back to normal you were afk since **{duration_str}**",
+                description=f"{EMOJI_TICK} {message.author.mention} you're set back to normal you were afk since **{duration_str}**",
                 color=discord.Color.blurple(),
             )
             await message.channel.send(embed=embed, delete_after=10)

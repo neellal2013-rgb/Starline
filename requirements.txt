@@ -1,4 +1,4 @@
-discord.py=2.3.2
+discord.py
 psutil
 aiohttp>=3.9.0
 Pillow>=10.0.0

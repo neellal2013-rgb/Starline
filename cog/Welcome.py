@@ -17,11 +17,14 @@ class Welcome(commands.Cog):
 
         if channel:
             description = (
+                f"THANK YOU FOR JOINING STARLINE CAFE
                 f"{member.mention} thanks for joining server\n"
                 f"visit these channels\n"
-                f"{ARROW_EMOJI} <#922323143928995911>\n"
-                f"{ARROW_EMOJI} <#917378312832180224>\n"
-                f"{ARROW_EMOJI} <#922880788305956865>"
+                f"{ARROW_EMOJI} Checkout - <#922323143928995911>\n"
+                f"{ARROW_EMOJI} Checkout - <#917378312832180224>\n"
+                f"{ARROW_EMOJI} Checkout - <#922880788305956865>\n"
+                f"{ARROW_EMOJI} Checkout - <#917266635495198750>\n"
+                f"{ARROW_EMOJI} Checkout - <#1536290430214471800>"
             )
 
             embed = discord.Embed(

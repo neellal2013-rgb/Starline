@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands, tasks
 from discord import app_commands
+import os
 import aiosqlite
 import aiohttp
 import io
@@ -18,7 +19,7 @@ logger.setLevel(logging.INFO)
 # Configuration Constants
 # -----------------------------------------------------------------------------
 ANNOUNCEMENT_CHANNEL_ID: int = 922420213176205322
-DB_FILE: str = "level.db"
+DB_FILE: str = "/app/data/level.db"
 MAX_LEVEL: int = 100
 
 # Milestone Role IDs Mapping
@@ -80,6 +81,7 @@ class DatabaseManager:
         self.db_path = db_path
 
     async def initialize(self):
+        os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
         async with aiosqlite.connect(self.db_path) as db:
             await db.execute("""
                 CREATE TABLE IF NOT EXISTS users (
@@ -92,6 +94,7 @@ class DatabaseManager:
             """)
             await db.execute("CREATE INDEX IF NOT EXISTS idx_xp ON users(xp DESC);")
             await db.commit()
+            
 
     async def get_user(self, user_id: int) -> Optional[Tuple[int, int, float, int]]:
         async with aiosqlite.connect(self.db_path) as db:

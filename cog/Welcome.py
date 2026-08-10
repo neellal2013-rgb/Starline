@@ -17,7 +17,7 @@ class Welcome(commands.Cog):
 
         if channel:
             description = (
-                f"{member.mention} THANK YOU FOR JOINING STARLINE CAFE"\n
+                f"(member.mention) THANK YOU FOR JOINING STARLINE CAFE"\n
                 f"visit these channels\n"
                 f"{ARROW_EMOJI} Checkout - <#922323143928995911>\n"
                 f"{ARROW_EMOJI} Checkout - <#917378312832180224>\n"

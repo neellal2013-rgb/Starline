@@ -1,4 +1,5 @@
 discord.py
+aiosqlite
 psutil
 aiohttp>=3.9.0
 Pillow>=10.0.0

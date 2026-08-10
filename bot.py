@@ -45,7 +45,7 @@ status_cycle = cycle(
             type=discord.ActivityType.listening, name="welcome events"
         ),
         lambda guild: discord.Streaming(
-            name="Private Server Live", url="https://www.twitch.tv/directory"
+            name="Starline Cafe Server Live", url="https://m.twitch.tv/starlinecafe/home"
         ),
         lambda guild: discord.Game(name="discord.py v2.x | /testwelcome"),
     ]
